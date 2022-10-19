@@ -1,0 +1,71 @@
+--- !ruby/object:Gem::Specification 
+name: remcached
+version: !ruby/object:Gem::Version 
+  version: 0.4.1
+platform: ruby
+authors: 
+- Stephan Maka
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-11-03 00:00:00 +01:00
+default_executable: 
+dependencies: []
+
+description: Ruby EventMachine memcached client
+email: astro@spaceboyz.net
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.rst
+files: 
+- .gitignore
+- README.rst
+- Rakefile
+- VERSION.yml
+- examples/fill.rb
+- lib/remcached.rb
+- lib/remcached/client.rb
+- lib/remcached/const.rb
+- lib/remcached/pack_array.rb
+- lib/remcached/packet.rb
+- remcached.gemspec
+- spec/client_spec.rb
+- spec/memcached_spec.rb
+- spec/packet_spec.rb
+has_rdoc: true
+homepage: http://github.com/astro/remcached/
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: Ruby EventMachine memcached client
+test_files: 
+- spec/memcached_spec.rb
+- spec/packet_spec.rb
+- spec/client_spec.rb
+- examples/fill.rb

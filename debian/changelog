@@ -1,0 +1,35 @@
+ruby-remcached (0.4.1-3) unstable; urgency=medium
+
+  * Team upload.
+  * rename debian/start_memcached_and_auto_install.sh to
+    debian/start_memcached_and_run.sh and make it generic; adapt all in
+    debian/rules accordingly.
+  * Move logic for calling debian/start_memcached_and_run.sh for running the
+    tests inside debian/ruby-tests.rake
+  * debian/start_memcached_and_run.sh: change the way that the process is killed
+  * debian/control: use secure Vcs uri, silence lintian
+  * debian/copyright: add Upstream-Contact field and add some commas
+  * Update Debian packaging copyright
+  * Declare compliance with Debian policy 3.9.7
+  * Bump debhelper compatibility level to 9
+  * debian/control: wrap and sort
+  * Mark package as autopkgtest-able
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Wed, 02 Mar 2016 13:52:57 -0300
+
+ruby-remcached (0.4.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 3.9.5.
+  * Build with ruby-eventmachine (>= 1.0.3-6) and gem2deb (>= 0.7.5) to get
+    support for Ruby2.0 and Ruby2.1. (Closes: #730968)
+  * Add force_ascii_encoding.patch to fix test failure with Ruby 2.x, because
+    of change in default encoding handling.
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 26 Apr 2014 02:15:06 +0200
+
+ruby-remcached (0.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #703088)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Thu, 07 Mar 2013 21:54:54 +0530

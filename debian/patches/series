@@ -1,0 +1,3 @@
+add-license-from-upstream-git.patch
+change-memcached-port.patch
+force_ascii_encoding.patch

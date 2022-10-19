@@ -1,0 +1,18 @@
+Description: change memcached port
+
+By default memcached listen on 11211. So changing spec file accordingly.
+
+Author: Praveen Arimbrathodiyil <praveen@debian.org>
+Last-Update: 2013-03-22
+
+--- a/spec/memcached_spec.rb
++++ b/spec/memcached_spec.rb
+@@ -4,7 +4,7 @@
+ describe Memcached do
+   def run(&block)
+     EM.run do
+-      Memcached.servers = %w(127.0.0.2 localhost:11212 localhost localhost)
++      Memcached.servers = %w(127.0.0.1 localhost:11211 localhost localhost)
+ 
+       @timer = EM::PeriodicTimer.new(0.01) do
+         # at least localhost & localhost
